@@ -1,0 +1,110 @@
+/* Responsive tweaks */
+
+@media (max-width: 1023px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills__grid,
+  .contact__layout,
+  .about__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    padding-inline: 1rem;
+  }
+
+  .nav__menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.8);
+    background: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+  }
+
+  .nav__menu-icon,
+  .nav__menu-icon::before,
+  .nav__menu-icon::after {
+    display: block;
+    width: 1.2rem;
+    height: 2px;
+    border-radius: 999px;
+    background-color: #4b5563;
+    position: relative;
+    transition: transform 160ms ease-out, opacity 160ms ease-out;
+  }
+
+  .nav__menu-icon::before,
+  .nav__menu-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  .nav__menu-icon::before {
+    top: -0.33rem;
+  }
+
+  .nav__menu-icon::after {
+    top: 0.33rem;
+  }
+
+  .nav__links {
+    position: absolute;
+    inset-inline: 1rem;
+    top: 3.4rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(209, 213, 219, 0.95);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .nav__links--open {
+    display: flex;
+  }
+
+  .nav__link {
+    padding: 0.35rem 0.4rem;
+  }
+
+  .nav__resume .nav__link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section {
+    padding-inline: 1.1rem;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero__subtitle {
+    max-width: 100%;
+  }
+
+  .projects__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .site-footer__inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+

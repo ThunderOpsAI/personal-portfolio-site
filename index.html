@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Jones | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of James Jones – Computer Science student and developer. Explore projects, skills, and get in touch."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a href="#home" class="nav__brand">James Jones</a>
+        <button
+          class="nav__menu-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="nav__menu-icon"></span>
+        </button>
+        <ul class="nav__links" id="primary-navigation">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__resume">
+            <a
+              href="./public/James_Jones_CV.pdf"
+              class="nav__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
+            </a>
+          </li>
+          <li>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle color theme"
+            >
+              <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Computer Science Student</p>
+          <h1 id="hero-title" class="hero__title">
+            James Jones
+          </h1>
+          <p class="hero__subtitle">
+            AI, data, and web developer focused on building reliable, human-centered
+            software.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+            <a
+              href="./public/James_Jones_CV.pdf"
+              class="btn btn--ghost"
+              download="James_Jones_CV.pdf"
+            >
+              Download Resume
+            </a>
+          </div>
+          <div class="hero__social" aria-label="Social links">
+            <a
+              href="https://github.com/ThunderOpsAI"
+              class="hero__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/james-jones-4738563a2/"
+              class="hero__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:james.jones2086@gmail.com"
+              class="hero__social-link"
+            >
+              Email
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about" aria-labelledby="about-title">
+        <div class="section__inner">
+          <h2 id="about-title" class="section__title">About</h2>
+          <div class="about__layout">
+            <div class="about__text">
+              <p>
+                I am a Computer Science student with a passion for building practical,
+                well-engineered software—spanning web, data, and AI projects. I enjoy
+                taking ideas from rough concept to polished implementation and care deeply
+                about clarity, reliability, and user experience.
+              </p>
+              <p>
+                My background includes leadership experience, academic projects, and
+                collaborations where I have worked across the stack: structuring
+                frontends, integrating APIs, and working with data pipelines and
+                automation.
+              </p>
+              <p>
+                I am currently focused on opportunities where I can grow as an engineer,
+                contribute to impactful products, and work with teams that value
+                craft and continuous learning.
+              </p>
+            </div>
+            <div class="about__meta">
+              <div class="about__highlight">
+                <h3>At a glance</h3>
+                <ul>
+                  <li>Computer Science student</li>
+                  <li>Experience with AI, data, and web development</li>
+                  <li>Strong communication and leadership background</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="section section--projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section__inner">
+          <h2 id="projects-title" class="section__title">Projects</h2>
+          <p class="section__subtitle">
+            A selection of projects that highlight my approach to problem solving,
+            reliability, and user-focused design.
+          </p>
+          <div class="projects__grid" id="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section
+        id="skills"
+        class="section section--skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section__inner">
+          <h2 id="skills-title" class="section__title">Skills</h2>
+          <div class="skills__grid" id="skills-grid"></div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="section section--contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="section__inner">
+          <h2 id="contact-title" class="section__title">Contact</h2>
+          <div class="contact__layout">
+            <form
+              id="contact-form"
+              class="contact__form"
+              novalidate
+              aria-describedby="contact-help"
+            >
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
+                <p class="form-field__error" id="name-error" aria-live="polite"></p>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+                <p class="form-field__error" id="email-error" aria-live="polite"></p>
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+                <p class="form-field__error" id="message-error" aria-live="polite"></p>
+              </div>
+              <p id="contact-help" class="contact__help">
+                Fields marked with * are required. Your default email client will open to
+                send the message.
+              </p>
+              <button
+                type="submit"
+                class="btn btn--primary"
+                id="contact-submit"
+                disabled
+              >
+                Send Message
+              </button>
+              <p
+                class="contact__status"
+                id="contact-status"
+                aria-live="polite"
+              ></p>
+            </form>
+            <aside class="contact__info">
+              <h3>Other ways to reach me</h3>
+              <ul>
+                <li>
+                  Email:
+                  <a href="mailto:james.jones2086@gmail.com">james.jones2086@gmail.com</a>
+                </li>
+                <li>
+                  GitHub:
+                  <a
+                    href="https://github.com/ThunderOpsAI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com/ThunderOpsAI
+                  </a>
+                </li>
+                <li>
+                  LinkedIn:
+                  <a
+                    href="https://www.linkedin.com/in/james-jones-4738563a2/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    linkedin.com/in/james-jones-4738563a2
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>&copy; <span id="footer-year"></span> James Jones. All rights reserved.</p>
+        <a href="#home" class="site-footer__back-to-top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./js/projects.js"></script>
+    <script src="./js/skills.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/form-validation.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
